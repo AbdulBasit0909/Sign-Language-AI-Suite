@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.vscode/
+.env
+dataset.npy
+model/sign_model.pkl
+model/label_encoder.pkl
+*.mp4
+*.jpg
+*.png
+.DS_Store
