@@ -1,0 +1,17 @@
+# Ignore screenshots
+shot_*.png
+voice_shot_*.png
+*.png
+
+# Ignore generated reports
+Report_*.txt
+
+# Ignore environment variables
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore model files (optional)
+model/*.pkl
