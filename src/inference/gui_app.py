@@ -1,6 +1,4 @@
 
-
-
 import customtkinter as ctk         # Modern UI framework
 import cv2                          # OpenCV for camera handling
 import PIL.Image, PIL.ImageTk       # Image processing for GUI display
@@ -23,7 +21,7 @@ from datetime import datetime       # Timestamping for reports
 from deep_translator import GoogleTranslator # Multi-language text translation
 from gtts import gTTS               # Google Text-to-Speech (Foreign Audio)
 import pygame                       # Audio Player for gTTS
-
+  
 # --- FIX SYSTEM PATHS ---
 # Ensures the application can find the 'src' folder no matter where you run it from
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -229,7 +227,7 @@ class SignLanguageApp(ctk.CTk):
         self.output_box = ctk.CTkTextbox(main_area, height=120, font=("Roboto", 24))
         self.output_box.pack(fill="x", pady=5)
         self.output_box.insert("0.0", "Start signing or type a question...")
-
+#/////quiz tab//////
     def setup_quiz_tab(self):
         """Builds the Game Interface"""
         self.tab_quiz.grid_columnconfigure(0, weight=1)
@@ -248,7 +246,7 @@ class SignLanguageApp(ctk.CTk):
         self.cam_label_quiz.grid(row=1, column=0, sticky="nsew", padx=10)
         
         ctk.CTkButton(self.tab_quiz, text="START QUIZ", height=50, font=("Arial", 20), command=self.start_game).grid(row=2, column=0, pady=20)
-
+#////teach tab/////
     def setup_teach_tab(self):
         """Builds the Training Interface"""
         self.tab_teach.grid_columnconfigure(1, weight=1)
